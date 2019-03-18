@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2jh-F5-3Rm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Easy View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EasyViewController" customModule="Whats_that_Animal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HPu-hp-zHq">
+                                <rect key="frame" x="15" y="419" width="345" height="208"/>
+                                <subviews>
+                                    <button tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wz5-hN-cOR">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.71764705882352942" green="0.94901960784313721" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4A-hz-L2K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKh-4g-hSA">
+                                        <rect key="frame" x="0.0" y="57" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.71764705882352942" green="0.94901960784313721" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYo-Gt-byZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6I-0X-SvZ">
+                                        <rect key="frame" x="0.0" y="114" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.71764705882352942" green="0.94901960784313721" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYa-dA-236"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-YY-D11">
+                                        <rect key="frame" x="0.0" y="171" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.71764705882352942" green="0.94901960784313721" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 4">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cn4-AD-qob"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cow" translatesAutoresizingMaskIntoConstraints="NO" id="GGl-kK-NEo">
+                                <rect key="frame" x="15" y="87" width="345" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="yT6-O8-cZr"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78g-Uo-MWI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX/15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIy-eT-cvN">
+                                        <rect key="frame" x="131.5" y="28" width="112" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3U-vH-GKJ">
+                                        <rect key="frame" x="253.5" y="28" width="111.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="193-oj-iL2">
+                                        <rect key="frame" x="10" y="28" width="111.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Main Menu"/>
+                                        <connections>
+                                            <segue destination="2jh-F5-3Rm" kind="showDetail" identifier="EasyToMain" id="1Ou-yj-1ce"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.94901960780000005" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="vIy-eT-cvN" firstAttribute="width" secondItem="193-oj-iL2" secondAttribute="width" id="6Qt-3e-Dkq"/>
+                                    <constraint firstAttribute="height" constant="71" id="FgU-fI-JQl"/>
+                                    <constraint firstItem="vIy-eT-cvN" firstAttribute="top" secondItem="78g-Uo-MWI" secondAttribute="top" constant="28" id="LyN-iq-qo8"/>
+                                    <constraint firstItem="vIy-eT-cvN" firstAttribute="leading" secondItem="193-oj-iL2" secondAttribute="trailing" constant="10" id="QKu-x4-Ue3"/>
+                                    <constraint firstItem="m3U-vH-GKJ" firstAttribute="top" secondItem="78g-Uo-MWI" secondAttribute="top" constant="28" id="RH9-Or-ZnD"/>
+                                    <constraint firstItem="193-oj-iL2" firstAttribute="leading" secondItem="78g-Uo-MWI" secondAttribute="leading" constant="10" id="Sdy-7G-DLR"/>
+                                    <constraint firstItem="vIy-eT-cvN" firstAttribute="height" secondItem="193-oj-iL2" secondAttribute="height" id="Vep-S4-D23"/>
+                                    <constraint firstItem="m3U-vH-GKJ" firstAttribute="width" secondItem="193-oj-iL2" secondAttribute="width" id="XCD-33-b4D"/>
+                                    <constraint firstAttribute="trailing" secondItem="m3U-vH-GKJ" secondAttribute="trailing" constant="10" id="Xlx-sm-bjI"/>
+                                    <constraint firstItem="193-oj-iL2" firstAttribute="top" secondItem="78g-Uo-MWI" secondAttribute="top" constant="28" id="f9c-7L-lEs"/>
+                                    <constraint firstItem="m3U-vH-GKJ" firstAttribute="leading" secondItem="vIy-eT-cvN" secondAttribute="trailing" constant="10" id="nLw-Eg-nyY"/>
+                                    <constraint firstItem="m3U-vH-GKJ" firstAttribute="height" secondItem="193-oj-iL2" secondAttribute="height" id="p4O-Ze-NDm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This animal is a commonly known as mans bestfriend. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y39-wa-U4L">
+                                <rect key="frame" x="15" y="355.5" width="345" height="48.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="78g-Uo-MWI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B3g-tD-Sd0"/>
+                            <constraint firstItem="GGl-kK-NEo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="CQj-lN-hmd"/>
+                            <constraint firstItem="y39-wa-U4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="FOj-4e-YKE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GGl-kK-NEo" secondAttribute="trailing" constant="15" id="M0Q-mU-t9R"/>
+                            <constraint firstItem="GGl-kK-NEo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Nyt-Gh-Hb0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y39-wa-U4L" secondAttribute="trailing" constant="15" id="PeD-t6-Twc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HPu-hp-zHq" secondAttribute="bottom" constant="40" id="SGU-Vb-fdk"/>
+                            <constraint firstItem="78g-Uo-MWI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bdt-K8-h5H"/>
+                            <constraint firstItem="78g-Uo-MWI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e2N-9H-cq7"/>
+                            <constraint firstItem="HPu-hp-zHq" firstAttribute="top" secondItem="y39-wa-U4L" secondAttribute="bottom" constant="15" id="frc-6U-gNV"/>
+                            <constraint firstItem="HPu-hp-zHq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="icL-Ct-8At"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HPu-hp-zHq" secondAttribute="trailing" constant="15" id="vo8-s9-Nlu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animals" destination="GGl-kK-NEo" id="pYf-qe-Zly"/>
+                        <outlet property="hint" destination="y39-wa-U4L" id="AvW-rU-hm5"/>
+                        <outlet property="level" destination="vIy-eT-cvN" id="2KG-mF-a3n"/>
+                        <outlet property="mainMenu" destination="193-oj-iL2" id="iOZ-CW-qu4"/>
+                        <outlet property="option1" destination="Wz5-hN-cOR" id="mpX-it-ZBb"/>
+                        <outlet property="option2" destination="gKh-4g-hSA" id="dCx-kY-A0r"/>
+                        <outlet property="option3" destination="v6I-0X-SvZ" id="lLg-7A-zHt"/>
+                        <outlet property="option4" destination="MwA-YY-D11" id="Stm-PX-hMN"/>
+                        <outlet property="scoreLabel" destination="m3U-vH-GKJ" id="GUH-ug-Edy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.59999999999999" y="99.400299850074973"/>
+        </scene>
+        <!--Main Menu -->
+        <scene sceneID="GrR-Eq-91T">
+            <objects>
+                <viewController title="Main Menu " id="2jh-F5-3Rm" customClass="MainMenuViewController" customModule="Whats_that_Animal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g2O-IB-0Na">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z75-Iq-UZV">
+                                <rect key="frame" x="100" y="284" width="175" height="45"/>
+                                <color key="backgroundColor" red="0.40528681509999998" green="0.89474529110000001" blue="0.99387307359999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="2jh-F5-3Rm" eventType="touchUpInside" id="33K-xv-t1B"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xtZ-oW-dve">
+                                <rect key="frame" x="80" y="360" width="215" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLT-0y-MWl">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="45"/>
+                                        <color key="backgroundColor" red="0.40528681509999998" green="0.89474529110000001" blue="0.99387307359999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                        <state key="normal" title="Select Difficulty">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSelection:" destination="2jh-F5-3Rm" eventType="touchUpInside" id="NSs-sY-SnM"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKj-U0-e4o">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="0.0"/>
+                                        <color key="backgroundColor" red="0.71764705882352942" green="0.94901960784313721" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <state key="normal" title="Easy">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="difficultyChosen:" destination="2jh-F5-3Rm" eventType="touchUpInside" id="NH6-pU-Of1"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kv-UN-UAy">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="0.0"/>
+                                        <color key="backgroundColor" red="0.96024900674819946" green="0.89587635456506076" blue="0.5891078248216236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <state key="normal" title="Medium">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="difficultyChosen:" destination="2jh-F5-3Rm" eventType="touchUpInside" id="kEQ-H4-OjK"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjq-nS-Fft">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="0.0"/>
+                                        <color key="backgroundColor" red="0.96024900674819946" green="0.66225137876908946" blue="0.60662088024173877" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <state key="normal" title="Hard">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="difficultyChosen:" destination="2jh-F5-3Rm" eventType="touchUpInside" id="ZnW-30-Arn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Jjq-nS-Fft" secondAttribute="trailing" id="19W-kl-fPS"/>
+                                    <constraint firstItem="9kv-UN-UAy" firstAttribute="leading" secondItem="xtZ-oW-dve" secondAttribute="leading" id="BaY-Fq-wBR"/>
+                                    <constraint firstItem="eLT-0y-MWl" firstAttribute="leading" secondItem="xtZ-oW-dve" secondAttribute="leading" id="Cjn-EP-lRz"/>
+                                    <constraint firstAttribute="trailing" secondItem="9kv-UN-UAy" secondAttribute="trailing" id="FRB-qc-mmh"/>
+                                    <constraint firstItem="Jjq-nS-Fft" firstAttribute="leading" secondItem="xtZ-oW-dve" secondAttribute="leading" id="KRQ-0F-wL1"/>
+                                    <constraint firstItem="rKj-U0-e4o" firstAttribute="leading" secondItem="xtZ-oW-dve" secondAttribute="leading" id="VAC-Fe-qYK"/>
+                                    <constraint firstAttribute="trailing" secondItem="eLT-0y-MWl" secondAttribute="trailing" id="r52-X1-RhY"/>
+                                    <constraint firstAttribute="trailing" secondItem="rKj-U0-e4o" secondAttribute="trailing" id="xDC-P5-Gei"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-mh-xfk">
+                                <rect key="frame" x="80" y="436" width="215" height="45"/>
+                                <color key="backgroundColor" red="0.40528681509999998" green="0.89474529110000001" blue="0.99387307359999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                <state key="normal" title="Stop Music">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopMusic:" destination="2jh-F5-3Rm" eventType="touchUpInside" id="HzB-h9-GgD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's that Animal?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sun-N0-rS1">
+                                <rect key="frame" x="10" y="150" width="355" height="41.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="z75-Iq-UZV" secondAttribute="trailing" constant="100" id="7Ob-ni-vaQ"/>
+                            <constraint firstItem="H1W-mh-xfk" firstAttribute="top" secondItem="xtZ-oW-dve" secondAttribute="bottom" constant="31" id="GCj-ry-I7v"/>
+                            <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="H1W-mh-xfk" secondAttribute="trailing" constant="80" id="N4R-jt-Be9"/>
+                            <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="Sun-N0-rS1" secondAttribute="trailing" constant="10" id="PIP-xV-Rr4"/>
+                            <constraint firstItem="Sun-N0-rS1" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="10" id="T3S-FM-NmT"/>
+                            <constraint firstItem="H1W-mh-xfk" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="80" id="aqV-y9-Cy5"/>
+                            <constraint firstItem="xtZ-oW-dve" firstAttribute="top" secondItem="z75-Iq-UZV" secondAttribute="bottom" constant="31" id="eBP-KC-LoE"/>
+                            <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="xtZ-oW-dve" secondAttribute="trailing" constant="80" id="jLU-Jn-StV"/>
+                            <constraint firstItem="z75-Iq-UZV" firstAttribute="top" secondItem="hjv-Zf-DyM" secondAttribute="top" constant="264" id="jTG-tO-2h2"/>
+                            <constraint firstItem="xtZ-oW-dve" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="80" id="mUp-om-naS"/>
+                            <constraint firstItem="z75-Iq-UZV" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="100" id="tA2-f2-y4O"/>
+                            <constraint firstItem="Sun-N0-rS1" firstAttribute="top" secondItem="hjv-Zf-DyM" secondAttribute="top" constant="130" id="tH8-Of-vpQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hjv-Zf-DyM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kzi-bs-DwV"/>
+                    <connections>
+                        <outlet property="easy" destination="rKj-U0-e4o" id="YMu-y8-HCj"/>
+                        <outlet property="hard" destination="Jjq-nS-Fft" id="bJY-No-JjP"/>
+                        <outlet property="medium" destination="9kv-UN-UAy" id="hBh-DV-fcR"/>
+                        <outlet property="play" destination="z75-Iq-UZV" id="0g6-8e-ZeF"/>
+                        <outlet property="select" destination="eLT-0y-MWl" id="t8W-cN-xIn"/>
+                        <outlet property="stop" destination="H1W-mh-xfk" id="Hnz-Xe-Wd4"/>
+                        <outletCollection property="selectionButtons" destination="rKj-U0-e4o" collectionClass="NSMutableArray" id="30o-U4-IGj"/>
+                        <outletCollection property="selectionButtons" destination="9kv-UN-UAy" collectionClass="NSMutableArray" id="XEL-LD-aFB"/>
+                        <outletCollection property="selectionButtons" destination="Jjq-nS-Fft" collectionClass="NSMutableArray" id="6op-s9-Xim"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="EasySegue" id="JwZ-Ch-cHG"/>
+                        <segue destination="iTc-lH-emb" kind="show" identifier="MediumSegue" id="vob-SX-Yo5"/>
+                        <segue destination="TCU-no-cgm" kind="show" identifier="HardSegue" id="kPB-jR-1n6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHm-Xc-bfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="-725.48725637181417"/>
+        </scene>
+        <!--Medium View Controller-->
+        <scene sceneID="Mdm-eA-Fnl">
+            <objects>
+                <viewController id="iTc-lH-emb" customClass="MediumViewController" customModule="Whats_that_Animal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e2U-ry-hgG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bog-gM-LVj">
+                                <rect key="frame" x="15" y="419" width="345" height="208"/>
+                                <subviews>
+                                    <button tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nc9-sJ-ydY">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.96024900670000002" green="0.89587635460000004" blue="0.58910782480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="iTc-lH-emb" eventType="touchUpInside" id="OKh-HB-qmp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rho-5j-seS">
+                                        <rect key="frame" x="0.0" y="57" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.96024900670000002" green="0.89587635460000004" blue="0.58910782480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="iTc-lH-emb" eventType="touchUpInside" id="WgP-Li-gXd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vE-S4-aZo">
+                                        <rect key="frame" x="0.0" y="114" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.96024900670000002" green="0.89587635460000004" blue="0.58910782480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="iTc-lH-emb" eventType="touchUpInside" id="PYF-X3-GcT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-Xo-szS">
+                                        <rect key="frame" x="0.0" y="171" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.96024900670000002" green="0.89587635460000004" blue="0.58910782480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 4">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="iTc-lH-emb" eventType="touchUpInside" id="Hv0-Zt-P5l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This animal is a commonly known as mans bestfriend. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpy-eK-MjA">
+                                <rect key="frame" x="15" y="355.5" width="345" height="48.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GF-Ut-2vO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNb-Gp-TaM">
+                                        <rect key="frame" x="10" y="28" width="111.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Main Menu"/>
+                                        <connections>
+                                            <segue destination="2jh-F5-3Rm" kind="show" id="OzZ-mw-jY3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX/15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bie-kw-MyL">
+                                        <rect key="frame" x="131.5" y="28" width="112" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYq-i4-7QD">
+                                        <rect key="frame" x="253.5" y="28" width="111.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96024900670000002" green="0.89587635460000004" blue="0.58910782480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="5ZW-I9-GJY"/>
+                                    <constraint firstItem="sYq-i4-7QD" firstAttribute="height" secondItem="lNb-Gp-TaM" secondAttribute="height" id="AsY-mw-s8E"/>
+                                    <constraint firstItem="bie-kw-MyL" firstAttribute="leading" secondItem="lNb-Gp-TaM" secondAttribute="trailing" constant="10" id="BkS-0G-XdM"/>
+                                    <constraint firstItem="sYq-i4-7QD" firstAttribute="top" secondItem="3GF-Ut-2vO" secondAttribute="top" constant="28" id="HlZ-b5-fiR"/>
+                                    <constraint firstItem="bie-kw-MyL" firstAttribute="width" secondItem="lNb-Gp-TaM" secondAttribute="width" id="K0r-K2-Tqa"/>
+                                    <constraint firstItem="bie-kw-MyL" firstAttribute="top" secondItem="3GF-Ut-2vO" secondAttribute="top" constant="28" id="Q40-sG-C29"/>
+                                    <constraint firstItem="sYq-i4-7QD" firstAttribute="width" secondItem="lNb-Gp-TaM" secondAttribute="width" id="VMy-kT-yuD"/>
+                                    <constraint firstAttribute="trailing" secondItem="sYq-i4-7QD" secondAttribute="trailing" constant="10" id="b0i-HC-bd1"/>
+                                    <constraint firstItem="lNb-Gp-TaM" firstAttribute="leading" secondItem="3GF-Ut-2vO" secondAttribute="leading" constant="10" id="cDv-vB-ntW"/>
+                                    <constraint firstItem="lNb-Gp-TaM" firstAttribute="top" secondItem="3GF-Ut-2vO" secondAttribute="top" constant="28" id="h1a-bu-Bp9"/>
+                                    <constraint firstItem="sYq-i4-7QD" firstAttribute="leading" secondItem="bie-kw-MyL" secondAttribute="trailing" constant="10" id="qFz-7T-z60"/>
+                                    <constraint firstItem="bie-kw-MyL" firstAttribute="height" secondItem="lNb-Gp-TaM" secondAttribute="height" id="zHx-Pc-zyB"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tortoise" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-mO-sog">
+                                <rect key="frame" x="15" y="87" width="345" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="e1Y-2M-h72"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zpy-eK-MjA" firstAttribute="leading" secondItem="zxI-aE-tTI" secondAttribute="leading" constant="15" id="2yf-FB-4Zh"/>
+                            <constraint firstItem="zxI-aE-tTI" firstAttribute="trailing" secondItem="zpy-eK-MjA" secondAttribute="trailing" constant="15" id="3zA-ew-2vU"/>
+                            <constraint firstItem="iIs-mO-sog" firstAttribute="top" secondItem="3GF-Ut-2vO" secondAttribute="bottom" constant="16" id="5Vd-RX-Bm0"/>
+                            <constraint firstItem="bog-gM-LVj" firstAttribute="top" secondItem="zpy-eK-MjA" secondAttribute="bottom" constant="15" id="Cp1-pe-Dtd"/>
+                            <constraint firstItem="zxI-aE-tTI" firstAttribute="bottom" secondItem="bog-gM-LVj" secondAttribute="bottom" constant="40" id="Iyj-ID-xcX"/>
+                            <constraint firstItem="bog-gM-LVj" firstAttribute="leading" secondItem="zxI-aE-tTI" secondAttribute="leading" constant="15" id="agL-X8-NJR"/>
+                            <constraint firstItem="3GF-Ut-2vO" firstAttribute="trailing" secondItem="zxI-aE-tTI" secondAttribute="trailing" id="bNs-08-FtW"/>
+                            <constraint firstItem="3GF-Ut-2vO" firstAttribute="leading" secondItem="zxI-aE-tTI" secondAttribute="leading" id="bZJ-IA-ybX"/>
+                            <constraint firstItem="3GF-Ut-2vO" firstAttribute="top" secondItem="e2U-ry-hgG" secondAttribute="top" id="gF8-8n-mIW"/>
+                            <constraint firstItem="iIs-mO-sog" firstAttribute="leading" secondItem="zxI-aE-tTI" secondAttribute="leading" constant="15" id="njU-2b-CXc"/>
+                            <constraint firstItem="zxI-aE-tTI" firstAttribute="trailing" secondItem="iIs-mO-sog" secondAttribute="trailing" constant="15" id="uxK-q3-50S"/>
+                            <constraint firstItem="zxI-aE-tTI" firstAttribute="trailing" secondItem="bog-gM-LVj" secondAttribute="trailing" constant="15" id="zWp-2b-o4R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zxI-aE-tTI"/>
+                    </view>
+                    <connections>
+                        <outlet property="animals" destination="iIs-mO-sog" id="TTw-Q7-DUX"/>
+                        <outlet property="hint" destination="zpy-eK-MjA" id="wSN-ER-iUW"/>
+                        <outlet property="level" destination="bie-kw-MyL" id="HYB-YI-Tn8"/>
+                        <outlet property="mainMenu" destination="lNb-Gp-TaM" id="gtM-ni-7RH"/>
+                        <outlet property="option1" destination="Nc9-sJ-ydY" id="f41-Ja-xK1"/>
+                        <outlet property="option2" destination="rho-5j-seS" id="Mtc-vo-BDP"/>
+                        <outlet property="option3" destination="4vE-S4-aZo" id="DYb-Pt-ELv"/>
+                        <outlet property="option4" destination="L3v-Xo-szS" id="afg-SK-8sp"/>
+                        <outlet property="scoreLabel" destination="sYq-i4-7QD" id="OoS-iR-KQY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7H-Up-U9Z" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="98.50074962518741"/>
+        </scene>
+        <!--Hard View Controller-->
+        <scene sceneID="Pf6-Dq-V3N">
+            <objects>
+                <viewController id="TCU-no-cgm" customClass="HardViewController" customModule="Whats_that_Animal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4OY-f3-dXK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gRl-CD-HeT">
+                                <rect key="frame" x="15" y="419" width="345" height="208"/>
+                                <subviews>
+                                    <button tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8n-Yk-EFh">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.96024900670000002" green="0.66225137879999996" blue="0.60662088020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="TCU-no-cgm" eventType="touchUpInside" id="07G-g4-ccN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eia-ad-3wZ">
+                                        <rect key="frame" x="0.0" y="57" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.96024900670000002" green="0.66225137879999996" blue="0.60662088020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="TCU-no-cgm" eventType="touchUpInside" id="h2L-ff-3kA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kk-6e-OW3">
+                                        <rect key="frame" x="0.0" y="114" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.96024900670000002" green="0.66225137879999996" blue="0.60662088020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="TCU-no-cgm" eventType="touchUpInside" id="Zjc-mo-mqQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNB-96-SdH">
+                                        <rect key="frame" x="0.0" y="171" width="345" height="37"/>
+                                        <color key="backgroundColor" red="0.96024900670000002" green="0.66225137879999996" blue="0.60662088020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <state key="normal" title="Option 4">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AnswerPressed:" destination="TCU-no-cgm" eventType="touchUpInside" id="LPI-u3-gQr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="25f-hJ-kqG">
+                                <rect key="frame" x="15" y="87" width="345" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="oXB-xb-ssn"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veJ-jK-jzd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1q-gR-5im">
+                                        <rect key="frame" x="10" y="28" width="111.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Main Menu"/>
+                                        <connections>
+                                            <segue destination="2jh-F5-3Rm" kind="show" id="Jaa-E0-Qt3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX/15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcB-pL-o48">
+                                        <rect key="frame" x="131.5" y="28" width="112" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMw-ot-x7U">
+                                        <rect key="frame" x="253.5" y="28" width="111.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96024900670000002" green="0.66225137879999996" blue="0.60662088020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Q1q-gR-5im" firstAttribute="top" secondItem="veJ-jK-jzd" secondAttribute="top" constant="28" id="7bS-lg-Tmh"/>
+                                    <constraint firstItem="Q1q-gR-5im" firstAttribute="leading" secondItem="veJ-jK-jzd" secondAttribute="leading" constant="10" id="9uO-j5-uIK"/>
+                                    <constraint firstItem="LcB-pL-o48" firstAttribute="height" secondItem="Q1q-gR-5im" secondAttribute="height" id="AaC-iR-T9j"/>
+                                    <constraint firstItem="LcB-pL-o48" firstAttribute="leading" secondItem="Q1q-gR-5im" secondAttribute="trailing" constant="10" id="VAW-24-hp6"/>
+                                    <constraint firstItem="FMw-ot-x7U" firstAttribute="width" secondItem="Q1q-gR-5im" secondAttribute="width" id="dUY-Ju-orN"/>
+                                    <constraint firstItem="FMw-ot-x7U" firstAttribute="top" secondItem="veJ-jK-jzd" secondAttribute="top" constant="28" id="g1h-gm-Deq"/>
+                                    <constraint firstAttribute="height" constant="71" id="gHM-wL-Iyy"/>
+                                    <constraint firstItem="LcB-pL-o48" firstAttribute="top" secondItem="veJ-jK-jzd" secondAttribute="top" constant="28" id="hEC-Qx-XO4"/>
+                                    <constraint firstItem="FMw-ot-x7U" firstAttribute="leading" secondItem="LcB-pL-o48" secondAttribute="trailing" constant="10" id="hUf-gn-ckK"/>
+                                    <constraint firstItem="FMw-ot-x7U" firstAttribute="height" secondItem="Q1q-gR-5im" secondAttribute="height" id="lJl-Hp-swo"/>
+                                    <constraint firstAttribute="trailing" secondItem="FMw-ot-x7U" secondAttribute="trailing" constant="10" id="qkP-x4-moy"/>
+                                    <constraint firstItem="LcB-pL-o48" firstAttribute="width" secondItem="Q1q-gR-5im" secondAttribute="width" id="vKM-9Y-dQm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This animal is a commonly known as mans bestfriend. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r64-Pl-hSQ">
+                                <rect key="frame" x="15" y="355.5" width="345" height="48.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="veJ-jK-jzd" firstAttribute="leading" secondItem="PEC-Hb-tzq" secondAttribute="leading" id="2PR-tP-RZB"/>
+                            <constraint firstItem="gRl-CD-HeT" firstAttribute="leading" secondItem="PEC-Hb-tzq" secondAttribute="leading" constant="15" id="AG8-pa-HEI"/>
+                            <constraint firstItem="PEC-Hb-tzq" firstAttribute="trailing" secondItem="gRl-CD-HeT" secondAttribute="trailing" constant="15" id="HMq-gW-u5b"/>
+                            <constraint firstItem="PEC-Hb-tzq" firstAttribute="trailing" secondItem="r64-Pl-hSQ" secondAttribute="trailing" constant="15" id="HSI-pZ-RqW"/>
+                            <constraint firstItem="25f-hJ-kqG" firstAttribute="top" secondItem="veJ-jK-jzd" secondAttribute="bottom" constant="16" id="SDC-PD-GVA"/>
+                            <constraint firstItem="veJ-jK-jzd" firstAttribute="trailing" secondItem="PEC-Hb-tzq" secondAttribute="trailing" id="TJG-YE-6De"/>
+                            <constraint firstItem="PEC-Hb-tzq" firstAttribute="bottom" secondItem="gRl-CD-HeT" secondAttribute="bottom" constant="40" id="W89-xj-WgG"/>
+                            <constraint firstItem="gRl-CD-HeT" firstAttribute="top" secondItem="r64-Pl-hSQ" secondAttribute="bottom" constant="15" id="XKY-GT-LlC"/>
+                            <constraint firstItem="r64-Pl-hSQ" firstAttribute="leading" secondItem="PEC-Hb-tzq" secondAttribute="leading" constant="15" id="aZW-lz-zgS"/>
+                            <constraint firstItem="25f-hJ-kqG" firstAttribute="leading" secondItem="PEC-Hb-tzq" secondAttribute="leading" constant="15" id="t6e-fQ-zZw"/>
+                            <constraint firstItem="PEC-Hb-tzq" firstAttribute="trailing" secondItem="25f-hJ-kqG" secondAttribute="trailing" constant="15" id="uYo-r5-Tjv"/>
+                            <constraint firstItem="veJ-jK-jzd" firstAttribute="top" secondItem="4OY-f3-dXK" secondAttribute="top" id="wfP-k8-LAX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PEC-Hb-tzq"/>
+                    </view>
+                    <connections>
+                        <outlet property="animals" destination="25f-hJ-kqG" id="Say-wH-7bA"/>
+                        <outlet property="hint" destination="r64-Pl-hSQ" id="NVB-SS-Vev"/>
+                        <outlet property="level" destination="LcB-pL-o48" id="F0z-TD-4nm"/>
+                        <outlet property="mainMenu" destination="Q1q-gR-5im" id="h80-6O-7aG"/>
+                        <outlet property="option1" destination="q8n-Yk-EFh" id="MTW-Bc-ikL"/>
+                        <outlet property="option2" destination="eia-ad-3wZ" id="w1n-XD-s7J"/>
+                        <outlet property="option3" destination="7Kk-6e-OW3" id="abe-hE-tiX"/>
+                        <outlet property="option4" destination="gNB-96-SdH" id="W2T-KH-rQX"/>
+                        <outlet property="scoreLabel" destination="FMw-ot-x7U" id="z71-7P-VBy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AG1-5n-nke" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.5999999999999" y="98.50074962518741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cow" width="838" height="559"/>
+        <image name="elephant" width="153.60000610351562" height="102.23999786376953"/>
+        <image name="tortoise" width="1024" height="683"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1Ou-yj-1ce"/>
+    </inferredMetricsTieBreakers>
+</document>
