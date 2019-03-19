@@ -138,6 +138,7 @@
                     </view>
                     <connections>
                         <outlet property="animals" destination="GGl-kK-NEo" id="pYf-qe-Zly"/>
+                        <outlet property="header" destination="78g-Uo-MWI" id="K7V-JC-MVY"/>
                         <outlet property="hint" destination="y39-wa-U4L" id="AvW-rU-hm5"/>
                         <outlet property="level" destination="vIy-eT-cvN" id="2KG-mF-a3n"/>
                         <outlet property="mainMenu" destination="193-oj-iL2" id="iOZ-CW-qu4"/>
@@ -241,7 +242,7 @@
                                     <action selector="stopMusic:" destination="2jh-F5-3Rm" eventType="touchUpInside" id="HzB-h9-GgD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's that Animal?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sun-N0-rS1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's that Animal?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sun-N0-rS1">
                                 <rect key="frame" x="10" y="150" width="355" height="41.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
                                 <nil key="textColor"/>
@@ -253,20 +254,22 @@
                             <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="z75-Iq-UZV" secondAttribute="trailing" constant="100" id="7Ob-ni-vaQ"/>
                             <constraint firstItem="H1W-mh-xfk" firstAttribute="top" secondItem="xtZ-oW-dve" secondAttribute="bottom" constant="31" id="GCj-ry-I7v"/>
                             <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="H1W-mh-xfk" secondAttribute="trailing" constant="80" id="N4R-jt-Be9"/>
-                            <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="Sun-N0-rS1" secondAttribute="trailing" constant="10" id="PIP-xV-Rr4"/>
-                            <constraint firstItem="Sun-N0-rS1" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="10" id="T3S-FM-NmT"/>
+                            <constraint firstItem="Sun-N0-rS1" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="10" id="ZjZ-VF-95q"/>
                             <constraint firstItem="H1W-mh-xfk" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="80" id="aqV-y9-Cy5"/>
                             <constraint firstItem="xtZ-oW-dve" firstAttribute="top" secondItem="z75-Iq-UZV" secondAttribute="bottom" constant="31" id="eBP-KC-LoE"/>
                             <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="xtZ-oW-dve" secondAttribute="trailing" constant="80" id="jLU-Jn-StV"/>
                             <constraint firstItem="z75-Iq-UZV" firstAttribute="top" secondItem="hjv-Zf-DyM" secondAttribute="top" constant="264" id="jTG-tO-2h2"/>
                             <constraint firstItem="xtZ-oW-dve" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="80" id="mUp-om-naS"/>
+                            <constraint firstItem="z75-Iq-UZV" firstAttribute="top" secondItem="Sun-N0-rS1" secondAttribute="bottom" constant="92.5" id="qgk-YQ-W3T"/>
                             <constraint firstItem="z75-Iq-UZV" firstAttribute="leading" secondItem="hjv-Zf-DyM" secondAttribute="leading" constant="100" id="tA2-f2-y4O"/>
-                            <constraint firstItem="Sun-N0-rS1" firstAttribute="top" secondItem="hjv-Zf-DyM" secondAttribute="top" constant="130" id="tH8-Of-vpQ"/>
+                            <constraint firstItem="Sun-N0-rS1" firstAttribute="top" secondItem="hjv-Zf-DyM" secondAttribute="top" constant="130" id="vgM-4b-aks"/>
+                            <constraint firstItem="hjv-Zf-DyM" firstAttribute="trailing" secondItem="Sun-N0-rS1" secondAttribute="trailing" constant="10" id="x4S-TQ-Sof"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hjv-Zf-DyM"/>
                     </view>
                     <navigationItem key="navigationItem" id="kzi-bs-DwV"/>
                     <connections>
+                        <outlet property="appTitle" destination="Sun-N0-rS1" id="4Gg-Lz-PTp"/>
                         <outlet property="easy" destination="rKj-U0-e4o" id="YMu-y8-HCj"/>
                         <outlet property="hard" destination="Jjq-nS-Fft" id="bJY-No-JjP"/>
                         <outlet property="medium" destination="9kv-UN-UAy" id="hBh-DV-fcR"/>

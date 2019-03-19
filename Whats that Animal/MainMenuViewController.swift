@@ -19,11 +19,17 @@ class MainMenuViewController: UIViewController {
     @IBOutlet weak var hard: UIButton!
     @IBOutlet var selectionButtons: [UIButton]!
     @IBOutlet weak var stop: UIButton!
+    @IBOutlet weak var appTitle: UILabel!
     
     var selection: String = ""
     var background: AVAudioPlayer?
     var musicOff: Bool = false
     var isTableVisible: Bool = false
+    var screenSize = UIScreen.main.bounds
+    var screenHeight: CGFloat = 0
+    var screenWidth: CGFloat = 0
+    var buttonSize: CGFloat = 0
+    var fontSize = 0
     
     @IBAction func playButton(_ sender: Any) {
         if selection == "Easy"
@@ -65,6 +71,25 @@ class MainMenuViewController: UIViewController {
             background?.play()
             background?.volume = 0.8
         }
+        if UIDevice.current.orientation.isLandscape {
+            screenSize = UIScreen.main.bounds
+            screenWidth = screenSize.width
+            screenHeight = screenSize.height
+        } else {
+            screenSize = UIScreen.main.bounds
+            screenWidth = screenSize.width
+            screenHeight = screenSize.height
+        }
+        
+        fontSize = Int(screenHeight / 30)
+        
+        play.titleLabel!.font = UIFont(name: "Futura-Bold", size: CGFloat(fontSize))
+        select.titleLabel!.font = UIFont(name: "Futura-Bold", size: CGFloat(fontSize))
+        easy.titleLabel!.font = UIFont(name: "Futura", size: CGFloat(fontSize))
+        medium.titleLabel!.font = UIFont(name: "Futura", size: CGFloat(fontSize))
+        hard.titleLabel!.font = UIFont(name: "Futura", size: CGFloat(fontSize))
+        stop.titleLabel!.font = UIFont(name: "Futura-Bold", size: CGFloat(fontSize))
+    
     }
     
     func setBackground(){

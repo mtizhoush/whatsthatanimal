@@ -12,7 +12,7 @@ class QuestionBankHard {
     var list = [Question]()
     
     init() {
-        list.append(Question(image: "crestedgecko", questionText: "Unlike most members of the cat family, these big cats enjoy swimming.", choice1: "Leopard Gecko", choice2: "Crested Gecko", choice3: "Gargoyle Gecko", choice4: "Iguana", answer: 2))
+        list.append(Question(image: "crestedgecko", questionText: "This reptile will drop its tail if frightened and is inable to grow a new one.", choice1: "Leopard Gecko", choice2: "Crested Gecko", choice3: "Gargoyle Gecko", choice4: "Iguana", answer: 2))
         
         list.append(Question(image: "ballpython", questionText: "This animal curls themselves up when it feels threatened.", choice1: "Boa Constrictor", choice2: "Burmese Python", choice3: "Ball Python", choice4: "King Cobra", answer: 3))
         

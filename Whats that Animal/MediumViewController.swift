@@ -31,6 +31,11 @@ class MediumViewController: UIViewController {
     var answer: String = ""
     var audioPlayer: AVAudioPlayer?
     var wrong: AVAudioPlayer?
+    var screenSize = UIScreen.main.bounds
+    var screenHeight: CGFloat = 0
+    var screenWidth: CGFloat = 0
+    var buttonSize: CGFloat = 0
+    var fontSize = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +61,31 @@ class MediumViewController: UIViewController {
         wrong?.setVolume(0.5, fadeDuration: 2)
         
         updateUI()
+        
+        if UIDevice.current.orientation.isLandscape {
+            screenSize = UIScreen.main.bounds
+            screenWidth = screenSize.width
+            screenHeight = screenSize.height
+        } else {
+            screenSize = UIScreen.main.bounds
+            screenWidth = screenSize.width
+            screenHeight = screenSize.height
+        }
+        
+        fontSize = Int(screenHeight / 40)
+        option1.layer.cornerRadius = 15
+        option2.layer.cornerRadius = 15
+        option3.layer.cornerRadius = 15
+        option4.layer.cornerRadius = 15
+        
+        option1.titleLabel!.font = UIFont(name: "Chalkboard SE", size: CGFloat(fontSize))
+        option2.titleLabel!.font = UIFont(name: "Chalkboard SE", size: CGFloat(fontSize))
+        option3.titleLabel!.font = UIFont(name: "Chalkboard SE", size: CGFloat(fontSize))
+        option4.titleLabel!.font = UIFont(name: "Chalkboard SE", size: CGFloat(fontSize))
+        scoreLabel.font = UIFont(name: "Chalkboard SE", size: CGFloat(fontSize))
+        hint.font = UIFont(name: "Chalkboard SE", size: CGFloat(fontSize))
+        mainMenu.titleLabel!.font = UIFont(name: "Chalkboard SE", size: CGFloat(fontSize))
+        level.font = UIFont(name: "Chalkboard SE", size: CGFloat(fontSize))
     }
     
     func setBackground(){
